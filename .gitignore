@@ -1,5 +1,7 @@
 ## Core latex/pdflatex auxiliary files:
-out/
+out/*
+!out/index.html
+!out/styles.css
 *.aux
 *.lof
 *.log

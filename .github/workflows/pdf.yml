@@ -1,0 +1,51 @@
+name: Build and Publish LaTeX document
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            fsi-satzung.tex
+
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: main-pdf
+          path: |
+            fsi-satzung.pdf
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build_latex
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: main-pdf
+          path: ./out
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages
