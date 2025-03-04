@@ -1,4 +1,5 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[12pt]{article}
+\usepackage[a4paper, left=2.5cm, right=2.5cm, top=3.5cm, bottom=3.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
@@ -6,8 +7,24 @@
 \usepackage{enumitem}
 \usepackage{graphicx}
 
-\title{Satzung der FSI Lehramt Informatik}
-\date{05.10.2022}
+\renewcommand{\familydefault}{\sfdefault} % serifenlose Schrift
+
+\usepackage{xcolor}
+
+%\newcommand{\red}[1]{\textcolor{red}{#1}}
+%\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+%\newcommand{\green}[1]{\textcolor{green}{#1}}
+%\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+
+\usepackage[hidelinks]{hyperref}
+
+% Definiere hier das Datum des Inkrafttretens der Satzung:
+\newcommand{\satzungsdatum}{05.03.2025}
+
+
+\title{Satzung der FSI Lehramt MINT}
+
+\date{\satzungsdatum}
 
 \begin{document}
 
@@ -16,38 +33,37 @@
 \section*{§1. Name}
 
 \begin{enumerate}
-    \item Der Name der Fachschaft wurde durch Abstimmung auf FSI Lehramt Informatik festgelegt.
-    \item Es wurde sich auf die Abkürzung FSI LA-INF geeinigt.
+    \item Der Name der Fachschaft wurde auf FSI Lehramt MINT festgelegt.
+    \item Es wurde sich auf die Abkürzung FSI LA-MINT geeinigt.
 \end{enumerate}
 
 \section*{§2. Logo}
 
-\begin{enumerate}
-	\item
-		Es wird folgendes Logo (und dessen Abwandlungen) verwendet:
-		\begin{figure}[h]
-			\includegraphics[width=0.5\textwidth]{img/logo.png}
-		\end{figure}
-\end{enumerate}
+	Es wird folgendes Logo (und dessen Abwandlungen) verwendet:
+	\begin{figure}[h]
+		\includegraphics[width=0.5\textwidth]{img/logo_MINT.png}
+	\end{figure}
 
 \section*{§3. Zweck der FSI}
 
 \begin{enumerate}
 	\item
-		Die FSI soll eine Anlaufstelle für die Studierenden des Fachs
-		Lehramt Informatik darstellen und sie während ihrer Studienzeit
+		\label{3.1}
+		Die FSI soll eine Anlaufstelle für die Studierenden der Fächer Lehramt Biologie, Lehramt Chemie, Lehramt Informatik, Lehramt Mathematik und Lehramt Physik
+		darstellen und diese während ihrer Studienzeit
 		unterstützen. Dazu gehört vor allem die Einzelberatung (z.B.
 		Eignung und Schwierigkeit einzelner Module) und die allgemeine
 		Betreuung von Studierenden (also auch Spaß).
 	\item
-		Die FSI soll die Studierenden des Fachs Lehramt Informatik
+		Die FSI soll die Studierenden der in \hyperref[3.1]{§3.1} genannten Fächer
 		repräsentieren, auf akute und langfristige Mängel im
-		Studienverlauf aufmerksam machen und somit das Studienfach
-		Lehramt Informatik aus der Sicht eines Studierenden vertreten.
+		Studienverlauf aufmerksam machen und somit die betreffenden Studienfächer aus der Sicht von Studierenden vertreten.
 	\item
-		Die FSI soll für die Studierenden des Fachs Lehramt Informatik
+		Die FSI soll für die Studierenden der in \hyperref[3.1]{§3.1} genannten Studienfächer
 		ein Angebot an Aktivitäten, Treffen und Gemeinschaft
 		ermöglichen.
+	\item
+		Es können nur diejenigen der in \hyperref[3.1]{§3.1} genannten Fächer durch die FSI vertreten werden, von denen auch Studierende in der FSI Mitglied sind.
 \end{enumerate}
 
 \section*{§4. Rechtsgrundlage}
@@ -55,28 +71,28 @@
 \begin{enumerate}
 	\item
 		Die FSI ist kein eingetragener Verein und ist daher weder eine
-		öffentliche Persönlichkeit noch rechtlich verankert.
+		juristische Person noch rechtlich verankert.
 	\item
 		Diese Satzung wurde als Konsens erstellt und hält die Ziele,
-		Absichten und Abläufe in der FSI fest. Sie ist aber nicht
+		Absichten und Abläufe in der FSI fest. Sie ist jedoch nicht
 		rechtlich bindend.
     	\item
-		Die FSI ist offen für alle Interessierte, unabhängig von deren
+		Die FSI ist offen für alle Interessierten, unabhängig von deren
 		Staatsangehörigkeit, Geschlecht, Herkunft, Religion,
 		Weltanschauung, Parteizugehörigkeit und gesellschaftlichen
 		Stellung.
 \end{enumerate}
 
-\section*{§5. Mitgliederschaft}
+\section*{§5. Mitgliedschaft}
 
 \begin{enumerate}
 	\item
-		Es sind grundsätzlich alle Studierende, ehemalige Studierende
+		Es sind grundsätzlich alle Studierenden, ehemalige Studierende
 		und Interessierte zu den Veranstaltungen und Aktionen
-		eingeladen, falls nicht explizit anders im Voraus gemeldet
+		eingeladen, falls es nicht explizit anders im Voraus gemeldet
 		wurde.
     	\item
-		Alle Studierenden des Fachs Lehramt Informatik, welche innerhalb
+		Alle Studierenden der in \hyperref[3.1]{§3.1} genannten Studienfächer, welche innerhalb
 		eines Jahres mindestens drei oder mehr Veranstaltungen
 		teilnehmen, können die Mitgliedschaft erhalten. Alternativ kann
 		die Mitgliedschaft auch durch einen einstimmigen
@@ -97,7 +113,7 @@
 	\item
 		Der Vorstand
 	\item
-		Die FSI Sitzung
+		Die FSI-Sitzung
 	\item
 		Die Mitgliederversammlung
 \end{enumerate}
@@ -105,18 +121,14 @@
 \section*{§7. Der Vorstand}
 
 \begin{enumerate}
+		\item
+		Der Vorstand besteht aus mindestens einer/einem Vorsitzenden, einer/einem stellvertretenden Vorsitzenden. Zudem ist jeweils die Studienfachvertretung jeder Fachrichtung, die derzeit von der FSI vertreten wird, automatisch Mitglied im Vorstand.
     	\item
-		Der Vorstand besteht aus mindestens einer/einem Vorsitzenden,
-		einer/einem stellvertretenden Vorsitzenden. Auf Beschluss der
-		Mitgliederversammlung ist die Ergänzung bis zu 2 weiteren
-		Beisitzenden möglich.
-    	\item
-		Der Vorstand hat vor allem folgende Aufgaben
+		Der Vorstand hat vor allem folgende Aufgaben:
     		\begin{enumerate}[label=(\roman*)]
 			\item
-				Vorbereiten und Einberufen der
-				Mitgliederversammlung sowie das Aufstellen von
-				Tagesordnungspunkten
+				Vorbereiten und Einberufen sowie das Aufstellen von
+				Tagesordnungspunkten der Mitgliederversammlungen und Sitzungen
         		\item
 				Abschluss und Kündigung von Verträgen
         		\item
@@ -124,25 +136,34 @@
     		\end{enumerate}
 \end{enumerate}
 
-\section*{§8. Die Bestellung des Vorstandes}
+\section*{§8. Bestellung des Vorstands}
 
 \begin{enumerate}
 	\item
-		Die Vorsitzenden können nur aktive Studierende (insbesondere
-		kein Urlaubssemester) des Fachs Lehramt Informatik sein.
+		Die Vorsitzenden können nur aktive Mitglieder sein.
 	\item
-		Jegliche Vorstandsmitgliederinnen/Vorstandsmitglieder müssen
-		als aktives Mitglied der FSI gelten.
+	Studienfachvertretung:
+	\begin{enumerate}[label=(\roman*)]
+		\item
+		Jedes Studienfach, welches derzeit von der FSI vertreten wird,
+		besitzt eine Studienfachvertreterin oder einen
+		Studienfachvertreter, die/der das entsprechende Studienfach
+		derzeit studiert.
+		\item
+		Die Studienfachvertretung wird per relativer Mehrheit aller derzeit das jeweilige Studienfach studierenden FSI-Mitglieder gewählt.
+		\item
+		Mehrfachbesetzungen aus Studienfachvertretung eines oder mehrerer Fächer und/oder (stellvertretendem) FSI-Vorsitz sind zulässig.
+	\end{enumerate}
 	\item
 		Alle Mitglieder des Vorstandes werden während einer
-		Mitgliederversammlung auf maximal 1 Jahr gewählt. Jene bleiben
+		Mitgliederversammlung für maximal 1 Jahr gewählt. Jene bleiben
 		auch nach einer regulären Amtszeit bis zur nächsten gültigen
 		Wahl im Amt.
 	\item
 		Wiederwahlen sind zulässig.
 \end{enumerate}
 
-\section*{§9. Beschlussfassung des Vorstandes}
+\section*{§9. Beschlussfassung des Vorstands}
 
 \begin{enumerate}
     	\item
@@ -171,153 +192,20 @@
 		beschließenden Regelung erklären.
 \end{enumerate}
 
-\section*{§10. Mitgliederversammlung}
 
-\begin{enumerate}
-	\item
-		Stimmrecht:
-		\begin{enumerate}[label=(\roman*)]
-        		\item
-				Jedes aktive Mitglied hat eine Stimme.
-        		\item
-				Zur Ausübung des Stimmrechts kann auch ein
-				anderes Mitglied schriftlich oder in Textform
-				(bspw. E-Mail) bevollmächtigt werden.
-        		\item
-				Die Bevollmächtigung ist für jede
-				Mitgliederversammlung gesondert zu erteilen.
-        		\item
-				Ein Mitglied darf jedoch nicht mehr als drei
-				fremde Stimmen vertreten.
-    		\end{enumerate}
-    	\item
-		Die Mitgliederversammlung ist für folgende Angelegenheiten
-		zuständig:
-		\begin{enumerate}[label=(\roman*)]
-			\item
-				Entgegennahme des Jahresberichts des Vorstands
-			\item
-				Entlassung des Vorstandes, die Wahl der
-				einzelnen
-				Vorstandsmitgliederinnen/Vorstandsmitglieder
-				und deren Abberufung bei außergewöhnlichen
-				Umständen
-			\item
-				Beschlussfassungen über die Änderungen der
-				Satzung. Satzungsänderungen können zusätzlich
-				auch über eine schriftliche Abstimmung aller
-				aktiven Mitglieder (bspw. per Umlaufverfahren)
-				vorgenommen werden.
-		\end{enumerate}
-\end{enumerate}
+\section*{§10. Die FSI-Sitzung}
 
-\section*{§11. Die Einberufung der Mitgliederversammlung}
+	Die FSI-Sitzung ist für das „Tagesgeschäft“ und die
+	dazugehörigen Entscheidungen zuständig.
+
+
+\section*{§11. Einberufung der FSI-Sitzung}
 
 \begin{enumerate}
     	\item
-		Die Mitgliederversammlung soll einmal jährlich stattfinden.
-		Optimalerweise im Zeitraum August – Oktober.
+		Die FSI-Sitzung soll regelmäßig stattfinden.
     	\item
-		Die Mitgliederversammlung wird vom Vorstand mit einer Frist von
-		4 Wochen schriftlich, fernschriftlich oder in Textform unter
-		Verwendung elektronischer Kommunikationsmittel unter Angabe der
-		Tagesordnung einberufen. Es ist ausreichend, eine Terminumfrage
-		für einen entsprechenden möglichen Zeitraum mit dieser
-		4-Wochen-Frist anzugeben. Der endgültige Termin muss dann 2
-		Wochen im Voraus bekannt gegeben werden.
-    	\item
-		Die Tagesordnung setzt der Vorstand fest. Allerdings können
-		aktive Mitglieder Beiträge/Ergänzungen zur Tagesordnung der
-		Mitgliederversammlung bis zu einer Woche vor der
-		Mitgliederversammlung einreichen.
-\end{enumerate}
-
-\section*{§12. Die Beschlussfassung der Mitgliederversammlung}
-
-\begin{enumerate}
-    	\item
-		Die Mitgliederversammlung wird von der/dem Vorsitzenden oder bei
-		deren/dessen Verhinderung von dem/der stellvertretenden
-		Vorsitzenden geleitet. Ist kein Vorstandsmitglied anwesend,
-		bestimmt die Mitgliederversammlung die/den Leitenden.
-    	\item
-		Die/der Protokollführende wird vom Versammlungsleiter bestimmt.
-		Diese/dieser muss kein aktives Mitglied sein.
-    	\item
-		Die Art der Abstimmung wird durch den Leiter bestimmt. Diese
-		ist, falls nicht anders bestimmt, offen. Auf Antrag eines
-		Mitgliedes ist geheim abzustimmen.
-    	\item
-		Die Mitgliederversammlung ist beschlussfähig, wenn 4 oder 50\%
-		aller stimmberechtigten Mitgliederinnen/Mitglieder anwesend oder
-		ordnungsgemäß vertreten sind. Besteht keine Beschlussfähigkeit,
-		so muss eine weitere Mitgliederversammlung einberufen werden.
-    	\item
-		Fassen von Beschlüssen:
-    		\begin{enumerate}[label=(\roman*)]
-			\item
-				Im Allgemeinen wird ein Beschluss mit einfacher
-				Mehrheit der abgegebenen gültigen Stimmen
-				gefasst.
-			\item
-				Enthaltungen gelten nicht als abgegebene Stimme.
-			\item
-				Beschlüsse über Satzungsänderungen benötigen
-				eine Zweidrittelmehrheit der abgegebenen
-				Stimmen.
-			\item
-				Die Abwahl eines Vorstandsmitgliedes benötigt
-				ebenfalls eine Zweidrittelmehrheit der
-				Anwesenden.
-		\end{enumerate}
-    	\item
-		Über die Beschlüsse ist ein Protokoll anzufertigen, welches für
-		Mitglieder einsehbar abgelegt wird oder per Mail zugesandt wird.
-		Es soll enthalten:
-    		\begin{enumerate}[label=(\roman*)]
-        		\item
-				Ort und Zeit der Versammlung
-        		\item
-				Anwesende Personen sowie Zahl der erschienenen
-				Mitgliederinnen/Mitglieder
-        		\item
-				Die Abstimmungsergebnisse und Beschlüsse
-        		\item
-				Bei Satzungsänderungen soll der genaue Wortlaut
-				angegeben werden
-    		\end{enumerate}
-\end{enumerate}
-
-\section*{§13. Außerordentliche Mitgliederversammlung}
-
-\begin{enumerate}
-	\item
-		Der Vorstand kann jeder Zeit eine außerordentliche
-		Mitgliederversammlung einberufen.
-    	\item
-		Eine außerordentliche Mitgliederversammlung ist ferner auf
-		schriftliches Verlangen von mindestens 20\% aller
-		Vereinsmitglieder binnen 4 Wochen durch den Vorstand
-		einzuberufen.
-\end{enumerate}
-
-\section*{§14. Die FSI Sitzung}
-
-\begin{enumerate}
-    	\item
-		Das Stimmrecht ist wie in §10.1 gegeben.
-    	\item
-		Die FSI Sitzung ist für das „Tagesgeschäft“ und die
-		dazugehörigen Entscheidungen zuständig.
-\end{enumerate}
-
-\section*{§15. Die Einberufung der FSI Sitzung}
-
-\begin{enumerate}
-    	\item
-		Die FSI Sitzung soll alle zwei bis drei Wochen stattfinden.
-    	\item
-		Die FSI Sitzung wird vom Vorstand schriftlich, fernschriftlich
+		Die FSI-Sitzung wird vom Vorstand schriftlich, fernschriftlich
 		oder in Textform unter Verwendung elektronischer
 		Kommunikationsmittel einberufen. Er wird dazu angehalten, dies
 		mindestens eine Woche im Voraus zu tun.
@@ -329,29 +217,171 @@
 		berücksichtigt werden.
 \end{enumerate}
 
-\section*{§16. Die Beschlussfähigkeit der FSI Sitzung}
+
+
+\section*{§12. Beschlussfassung der FSI-Sitzung}
+\label{12}
+\begin{enumerate}
+
+	\item
+	Eine FSI-Sitzung wird von einem der Vorstandsmitglieder geleitet, typischerweise einer/einem Vorsitzenden. Ist kein Vorstandsmitglied anwesend,
+	bestimmen die anwesenden FSI-Mitglieder die/den Leitenden.
+	\item
+	\begin{enumerate}[label=(\roman*)]
+		\item
+		Sofern nicht anders geregelt, hat jedes FSI-Mitglied eine Stimme.
+		\item
+		Zur Ausübung des Stimmrechts kann auch ein
+		anderes Mitglied schriftlich oder in Textform
+		(bspw. E-Mail) bevollmächtigt werden.
+		\item
+		Die Bevollmächtigung ist für jede
+		FSI-Sitzung gesondert zu erteilen.
+		\item
+		Ein Mitglied darf nicht mehr als drei
+		fremde Stimmen vertreten.
+	\end{enumerate}
+	\item
+	Die/der Protokollführende wird von der Sitzungsleitung bestimmt.
+	Diese/dieser muss kein aktives Mitglied sein.
+	\item
+	Die Art der Abstimmung wird durch die Sitzungsleitung bestimmt. Die Art der Abstimmung
+	ist, falls nicht anders bestimmt, offen. Auf Antrag eines
+	Mitgliedes ist geheim abzustimmen.
+	\item
+	Die FSI-Sitzung ist beschlussfähig, wenn 50\%
+	aller stimmberechtigten Mitglieder anwesend oder
+	ordnungsgemäß vertreten sind. Besteht keine Beschlussfähigkeit,
+	so können keine Beschlüsse gefasst werden.
+	\item
+	Fassen von Beschlüssen:
+	\begin{enumerate}[label=(\roman*)]
+		\item
+		Im Allgemeinen wird ein Beschluss mit einfacher
+		Mehrheit der abgegebenen gültigen Stimmen
+		gefasst.
+		\item
+		Enthaltungen gelten nicht als abgegebene Stimme.
+		\item
+		Beschlüsse über Satzungsänderungen benötigen
+		eine Zweidrittelmehrheit der abgegebenen
+		Stimmen der aktiven Mitglieder.
+		\item
+		Die Abwahl eines Vorsitzenden benötigt
+		ebenfalls eine Zweidrittelmehrheit der
+		abgegebenen Stimmen der aktiven Mitglieder.
+		\item
+			Die Abwahl einer Studienfachvertretung benötigt
+			ebenfalls eine Zweidrittelmehrheit der
+			abgegebenen Stimmen der Mitglieder des
+			entsprechenden Studiengangs.
+	\end{enumerate}
+	\item
+	Über die Beschlüsse ist ein Protokoll anzufertigen, welches für
+	Mitglieder einsehbar abgelegt oder per Mail zugesandt wird.
+	Es soll enthalten:
+	\begin{enumerate}[label=(\roman*)]
+		\item
+		Ort und Zeit der Versammlung
+		\item
+		Anwesende Personen sowie Zahl der erschienenen
+		Mitglieder
+		\item
+		Die Abstimmungsergebnisse und Beschlüsse
+		\item
+		Bei Satzungsänderungen soll der genaue Wortlaut
+		der Änderungen angegeben werden
+	\end{enumerate}
+\end{enumerate}
+\section*{§13. Satzungsänderungen}
+\begin{enumerate}
+	\item
+	Soll eine Satzungsänderung während einer FSI-Sitzung
+	vorgenommen werden, muss dieses Ansinnen eine Woche vorher
+	gegenüber den aktiven Mitgliedern angekündigt werden.
+	\item
+	Entsteht ein konkreter Änderungsvorschlag auf der Sitzung oder in
+	einer hierfür gebildeten Arbeitsgruppe, muss den aktiven
+	Mitglieder noch eine Woche Zeit gegeben werden, zu dem konkreten
+	Vorschlag Widerspruch zu äußern.
+	Sollte Widerspruch geäußert worden sein, so wird auf der
+	nächsten Sitzung oder mittels Umlaufverfahren final über den
+	Entwurf abgestimmt. Andernfalls wird die Änderung angenommen.
+	\item
+	Kleine Satzungsänderungen können zusätzlich
+	auch über eine schriftliche Abstimmung aller
+	aktiven Mitglieder (bspw. per Umlaufverfahren)
+	vorgenommen werden. Sollte es Unstimmigkeiten über die
+	Interpretation "klein" geben, so muss die Änderung wie jede
+	andere behandelt werden.
+\end{enumerate}
+
+
+
+\section*{§14. Die Mitgliederversammlung}
 
 \begin{enumerate}
-    	\item
-		§12.1 bis §12.3 gelten auch hier (für eben genau die FSI
-		Sitzung).
-    	\item
-		Die FSI Sitzung ist beschlussfähig, wenn 4 oder 50\% aller
-		stimmberechtigten Mitglieder anwesend oder ordnungsgemäß
-		vertreten sind. Besteht keine Beschlussfähigkeit, so können
-		keine Beschlüsse gefasst werden.
-    	\item
-		Das Fassen von Beschlüssen wird aus §12.5 übernommen.
-    	\item
-		Das Protokollieren gilt wie in §12.6.
+
+	\item
+	Die Mitgliederversammlung ist für folgende Angelegenheiten
+	zuständig:
+	\begin{enumerate}[label=(\roman*)]
+		\item
+		Entgegennahme des Jahresberichts des Vorstands
+		\item
+		Entlassung des Vorstandes, Wahl der nächsten Vorstandsmitglieder
+		und Abberufung von amtierenden Vorstandsmitgliedern bei außergewöhnlichen
+		Umständen
+	\end{enumerate}
+
+	\item
+	\label{10.1_Stimmrecht}
+	Die Mitgliedersammlung ist eine spezielle FSI-Sitzung. \\
+		Sitzungsleitung, Stimmrecht, Protokollführung, Art der Abstimmung, Beschlussfähigkeit,
+		Fassen von Beschlüssen und Protokollierung von Beschlüssen sind wie in
+		\hyperref[12]{§12} geregelt. Sollte keine Beschlussfähigkeit bestehen, muss eine weitere
+		Mitgliederversammlung einberufen werden.
 \end{enumerate}
+
+\section*{§15. Einberufung der Mitgliederversammlung}
+
+\begin{enumerate}
+	\item
+	Die Mitgliederversammlung soll einmal jährlich stattfinden.
+	Optimalerweise im Zeitraum März – Mai.
+	\item
+	Die Mitgliederversammlung wird vom Vorstand mit einer Frist von
+	4 Wochen schriftlich, fernschriftlich oder in Textform unter
+	Verwendung elektronischer Kommunikationsmittel unter Angabe der
+	Tagesordnung einberufen. Es ist ausreichend, eine Terminumfrage
+	für einen entsprechenden möglichen Zeitraum mit dieser
+	4-Wochen-Frist anzugeben. Der endgültige Termin muss 2
+	Wochen im Voraus bekannt gegeben werden.
+\end{enumerate}
+
+
+\section*{§16. Außerordentliche Mitgliederversammlung}
+
+\begin{enumerate}
+	\item
+	Der Vorstand kann jeder Zeit eine außerordentliche
+	Mitgliederversammlung einberufen.
+	\item
+	Eine außerordentliche Mitgliederversammlung ist ferner auf
+	schriftliches Verlangen von mindestens 20\% aller
+	FSI-Mitglieder binnen 4 Wochen durch den Vorstand
+	einzuberufen.
+\end{enumerate}
+
 
 \section*{§17. Gültigkeit dieser Satzung}
 
 \begin{enumerate}
 	\item
-		Diese Satzung wurde in der Versammlung vom 05.10.2022
+		Diese Satzung wurde in der Versammlung vom 26.02.2025
 		beschlossen.
+	\item
+		Diese Satzung tritt am \satzungsdatum \ in Kraft.
 	\item
 		Alle bisherigen Satzungen treten damit außer Kraft.
 \end{enumerate}
